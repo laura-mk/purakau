@@ -1,0 +1,124 @@
+//
+// Classes like you'd see in Bootstrap but aren't
+//
+
+// Hide JS elements if !JS
+// old selectors
+.no-js .needs-js,
+.js .no-js,
+
+// bootstrap style
+.no-js .d-nojs-none,
+.js .d-js-none {
+  display: none !important;
+}
+.no-js .d-nojs-block,
+.js .d-js-block {
+  display: block !important;
+}
+.no-js .d-nojs-inline-block,
+.js .d-js-inline-block {
+  display: inline-block !important;
+}
+.no-js .d-nojs-inline,
+.js .d-js-inline {
+  display: inline !important;
+}
+
+
+// Cursors (add more as needed)
+.c-pointer {
+  cursor: pointer;
+}
+
+
+
+
+// Hover classes (only on a tags and items with the .c-pointer class)
+a,
+.c-pointer {
+  &[class^="hover-"],
+  &[class*=" hover-"] {
+    transition: $transition-timing-normal all;
+  }
+}
+
+
+// Fix the collapse feature
+.no-js .collapse {
+  display: block;
+}
+.no-js .collapse.collapsed-preview {
+  display: none;
+}
+
+
+// Negative margins (supports breakpoints)
+// m-n3, my-n2, mx-lg-4, etc
+// Spacing is the same as the original ones, just negative
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @each $size, $length in $spacers {
+      .m#{$infix}-n#{$size} { margin: -1 * $length !important; }
+      .mt#{$infix}-n#{$size},
+      .my#{$infix}-n#{$size} {
+        margin-top: -1 * $length !important;
+      }
+      .mr#{$infix}-n#{$size},
+      .mx#{$infix}-n#{$size} {
+        margin-right: -1 * $length !important;
+      }
+      .mb#{$infix}-n#{$size},
+      .my#{$infix}-n#{$size} {
+        margin-bottom: -1 * $length !important;
+      }
+      .ml#{$infix}-n#{$size},
+      .mx#{$infix}-n#{$size} {
+        margin-left: -1 * $length !important;
+      }
+    }
+  }
+}
+
+// Add breakpoints and properties within them (so the properties can be grouped)
+// Usage: @include properties-by-breakpoint("w", "width", (25:25%, 100:100%));
+// Cool,  but currently unused
+/*
+@mixin properties-by-breakpoint($rule-prefix, $property, $list) {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      @include properties-for-breakpoint($breakpoint, $property, $rule-prefix, $list)
+    }
+  }
+}
+*/
+
+
+
+// Add properties for within a breakpoint (so the breakpoints can be grouped)
+/* Usage:
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      @include properties-for-breakpoint("w", "width", (25:25%, 100:100%));
+    }
+  }
+*/
+@mixin properties-for-breakpoint($breakpoint, $rule-prefix, $property, $list) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @each $name, $value in $list {
+    .#{$rule-prefix}#{$infix}-#{$name} {
+      #{$property}: $value !important;
+    }
+  }
+}
+
+
+
+// This creates breakpoints and breakpointed properties within them
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    // Add more rulesets here...
+
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "springtimesoft-website-theme",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "watch": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --watch",
+    "build": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "package": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint-js": "node_modules/.bin/eslint src/js",
+    "lint-sass": "node_modules/.bin/sass-lint -v"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "expose-loader": "^0.7",
+    "jquery": "^3",
+    "laravel-mix": "^2.1.14",
+    "path": "^0.12.7",
+    "popper.js": "^1.14.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.7.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "sass-lint": "^1.12.1",
+    "webpack": "^3"
+  }
+}

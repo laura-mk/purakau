@@ -1,0 +1,60 @@
+// Base font size (for <html> tag)
+$base-font-size: 18px;
+
+// Brand colours
+$brand-green: #4b8211;
+$brand-mid-green: #5b912c;
+$brand-light-green: #74b743;
+$primary: $brand-green;
+
+$brand-light-grey: #f2f2f2;
+$brand-mid-grey: #71777a;
+$brand-dark-grey: #242424;
+$brand-black: #222222;
+$brand-borders: #d7d7d7;
+$brand-lightest: #f7f7f7;
+
+$transition-timing-normal: 200ms;
+
+/**
+ * Use this to override global bootstrap variables
+ * Refer to node_modules/bootstrap/scss/_variables.scss
+ */
+
+
+//
+// Spacers
+//
+$spacers: (
+  6: 5rem
+);
+
+// Fonts
+$base-font-family: "Raleway", Helvetica, Arial, sans-serif;
+$header-font-family: "Roboto Slab", serif;
+
+$h1-font-size: 2rem;
+$h2-font-size: 1.77777rem;
+$h3-font-size: 1.55555rem;
+$h4-font-size: 1.33333rem;
+$h5-font-size: 1.16666rem;
+$h6-font-size: 1rem;
+
+//
+// Nav
+//
+$nav-link-padding-y: 1.166667rem;
+
+
+/*
+.m-n, mx-n, mr-n, .p-n, px-n, pr-n
+// $spacer = 1rem
+0 =  0
+1 =  4.5 ($spacer * .25)
+2 =  9   ($spacer * .5)
+3 = 18   ($spacer)
+4 = 27   ($spacer * 1.5)
+5 = 54   ($spacer * 3)
+6 = 90   (5rem) // custom added
+auto = auto
+*/
