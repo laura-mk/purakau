@@ -4,7 +4,14 @@
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
-    {{ content }}
+    {% include header.html %}
+    <main id="main" class="main">
+        <div class="page-content page page--{{ page.title | slugify }} pt-4">
+          {{ content }}
+        </div>
+    </main>
+
+    {% include footer.html %}
 
     <script src="/assets/js/main.js"></script>
   </body>
