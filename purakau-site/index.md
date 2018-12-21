@@ -4,4 +4,4 @@
 
 layout: home
 ---
-Testing the home page
+Hello world
