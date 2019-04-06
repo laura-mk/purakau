@@ -12172,19 +12172,6 @@ footer .footer-copyright {
   margin: 0 auto;
 }
 
-.home__work {
-  background-color: #f2f2f2;
-}
-
-.home__technologies {
-  background-color: #242424;
-  color: white;
-}
-
-.home__technologies a {
-  color: #74b743;
-}
-
 .page--home {
   margin-bottom: 0 !important;
   padding-top: 3rem !important;
