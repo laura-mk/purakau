@@ -1,3 +1,11 @@
-<header id="header" class="{% if page.banner_image %}header-banner pb-5 {% if page.banner_invert != true %} banner--invert{% endif %}{% if page.banner_case_study %} banner--case-study banner--{{ page.title }} {% endif %}{% endif %}">
-  <h1>Page header</h1>
+<header id="header">
+
+  <div class="container-fluid">
+    {% if page.layout == 'home' %}
+      <img class="home-hero" src="/assets/css/purakau-hero.svg" alt="{{ site.meta_title }}" />
+    {% else %}
+      <a class="header__logo" href="/" title="{{ site.meta_title }}"><img class="site-logo" src="/assets/css/purakau-logo.svg" alt="{{ site.meta_title }}" /></a>
+    {% endif %}
+  </div>
+
 </header>

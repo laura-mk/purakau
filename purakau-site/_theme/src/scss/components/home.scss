@@ -1,4 +1,12 @@
+.home-hero {
+  display: block;
+  max-height: 90vh;
+  margin: 0 auto;
+}
+
 .home {
+
+
   &__work {
     background-color: $brand-light-grey;
   }
