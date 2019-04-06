@@ -12120,42 +12120,11 @@ blockquote span {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
-.footer-contact {
-  background-color: #4b8211;
-  color: white;
-}
-
-.footer-contact__text {
-  font-family: "Roboto Slab", serif, sans-serif;
-  font-size: 24px;
-}
-
-.footer-contact a {
-  color: white;
-}
-
 footer {
   background-color: #222222;
   color: white;
-}
-
-footer a.footer-logo img {
-  max-width: 260px;
-}
-
-footer .footer-copyright {
-  font-size: 14px;
-}
-
-@media (min-width: 576px) {
-  footer ul li {
-    float: left;
-    margin-right: 1rem;
-  }
-
-  footer ul li a {
-    color: #74b743;
-  }
+  padding: 1rem;
+  text-align: center;
 }
 
 #header {

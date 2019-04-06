@@ -1,38 +1,6 @@
-.footer-contact {
-  background-color: $brand-green;
-  color: white;
-
-  &__text {
-    font-family: $header-font-family, sans-serif;
-    font-size: 24px;
-  }
-  a {
-    color: white;
-  }
-}
-
 footer {
   background-color: $brand-black;
   color: white;
-
-  a.footer-logo {
-    img {
-      max-width: 260px;
-    }
-  }
-  .footer-copyright {
-    font-size: 14px;
-  }
-
-  ul {
-    @include media-breakpoint-up(sm) {
-      li {
-        float: left;
-        margin-right: 1rem;
-        a {
-          color: $brand-light-green;
-        }
-      }
-    }
-  }
+  padding: 1rem;
+  text-align: center; 
 }
