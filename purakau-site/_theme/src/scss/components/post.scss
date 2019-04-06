@@ -1,0 +1,15 @@
+.post-banner {
+  background-color: $brand-black;
+  min-height: 400px;
+  text-align: center;
+
+  &--title {
+    background-color: white;
+    display: inline-block;
+    max-width: 560px;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}

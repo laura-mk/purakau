@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "A third post"
+subtitle: "Ranginui me Papatūānuku"
+title:  "Te ao mārama"
 date:   2018-04-1 13:14:31 +1300
 categories: post
 ---

@@ -12006,13 +12006,13 @@ html {
 }
 
 body {
-  color: #222222;
+  color: #000;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
 h1,
 h2 {
-  font-family: "Roboto Slab", serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1.25;
   margin-bottom: 1em;
@@ -12101,7 +12101,7 @@ ul {
 blockquote {
   color: #4b8211;
   border-left: solid #4b8211 4px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-size: 24px;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -12121,7 +12121,7 @@ blockquote span {
 }
 
 footer {
-  background-color: #222222;
+  background-color: #000;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -12144,5 +12144,21 @@ footer {
 .page--home {
   margin-bottom: 0 !important;
   padding-top: 3rem !important;
+}
+
+.post-banner {
+  background-color: #000;
+  min-height: 400px;
+  text-align: center;
+}
+
+.post-banner--title {
+  background-color: white;
+  display: inline-block;
+  max-width: 560px;
+}
+
+.post-banner--title h1 {
+  margin-bottom: 0;
 }
 
