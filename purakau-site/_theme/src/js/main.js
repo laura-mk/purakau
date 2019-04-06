@@ -36,4 +36,11 @@ import global from './components/global';
 
 global();
 
+$('.collapse').collapse()
+
 /* eslint-enable */
+
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
