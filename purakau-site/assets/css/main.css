@@ -417,7 +417,7 @@ h6,
 
 h1,
 .h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h2,
@@ -12029,18 +12029,8 @@ h6 {
   letter-spacing: 0.02em;
 }
 
-h1 {
+h1.post-title {
   color: #2A655E;
-}
-
-h1.page-heading {
-  font-weight: 300 !important;
-}
-
-h2.page-subtitle {
-  color: #2A655E;
-  font-size: 2rem;
-  font-weight: 700 !important;
 }
 
 p {
@@ -12125,6 +12115,10 @@ footer {
   padding: 1rem;
 }
 
+footer a {
+  color: white;
+}
+
 #header {
   padding: 1rem;
 }
@@ -12148,27 +12142,31 @@ body.home .card {
   color: #2A655E;
 }
 
-.post-banner {
+body.post .post-banner {
   background-color: #000;
   min-height: 400px;
 }
 
-.post-banner--title {
+body.post .post-banner--title {
   background-color: white;
   display: inline-block;
   max-width: 560px;
 }
 
-.post-banner--title h1 {
+body.post .post-banner--title h1 {
   margin-bottom: 0;
 }
 
-.kupu-glossary {
+body.post strong {
+  background-color: #FCEAE6;
+}
+
+body.post .kupu-glossary {
   background-color: #FCEAE6;
   color: #C23819;
 }
 
-.kupu-glossary ul li h3 {
+body.post .kupu-glossary ul li h3 {
   margin-bottom: 0;
 }
 

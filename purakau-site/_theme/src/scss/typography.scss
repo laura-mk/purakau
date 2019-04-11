@@ -28,21 +28,9 @@ h6 {
   margin-bottom: 1em;
   letter-spacing: 0.02em;
 }
-h1 {
-  color: $brand-green;
-}
-h1.page-heading {
-  font-weight: 300 !important;
-}
-h2.page-subtitle {
-  color: $brand-green;
-  font-size: 2rem;
-  font-weight: 700 !important;
-}
 
-// Scale down heading sizes on smaller screens
-@include media-breakpoint-up(md) {
-
+h1.post-title {
+  color: $brand-green;
 }
 
 

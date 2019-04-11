@@ -11,4 +11,4 @@ kupu:
 ---
 Lorem ipsum dolor sit amet, dicat scripserit eos id. Ea ius omnis iudico signiferumque. Virtute abhorreant an cum, pro an tantas pertinax senserit. Oblique quaestio has no, ullum quaeque usu in, vero simul ea usu.
 
-Ranginui  Lorem ipsum dolor sit amet, dicat scripserit eos id. Ea ius omnis iudico signiferumque. Virtute abhorreant an cum, pro an tantas pertinax senserit. Oblique quaestio has no, ullum quaeque usu in, vero simul ea usu.
+**Ranginui**  Lorem ipsum dolor sit amet, dicat scripserit eos id. Ea ius omnis iudico signiferumque. Virtute abhorreant an cum, pro an tantas pertinax senserit. Oblique quaestio has no, ullum quaeque usu in, vero simul ea usu.
