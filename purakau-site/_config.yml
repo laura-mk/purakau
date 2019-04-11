@@ -43,6 +43,4 @@ plugins:
 
 
 collections:
-    kupu:
-        output: true
-        permalink: /kupu/:path/
+    kupu

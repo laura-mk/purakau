@@ -13,3 +13,15 @@
     }
   }
 }
+
+.kupu-glossary {
+  background-color: $brand-light-green;
+  color: $brand-green;
+  ul  {
+    li {
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -17,45 +17,26 @@ layout: default
       {{ content }}
     </div>
   </div>
-  <div class="row">
-    <div class="col-12">
-      <h2>Kupu</h2>
-      <div id="accordion">
-        {% for kupu_name in page.kupu %}
-          {% assign kupu = kupu_name %}
-            {% for _kupu in site.kupu %}
-              {% if _kupu.slug == kupu_name %}
-                {% assign kupu = _kupu.title %}
-              {% endif %}
+</div>
+
+<div class="kupu-glossary mt-5 py-5">
+  <div class="container-fluid">
+    {% if page.kupu %}
+      <div class="row">
+        <div class="col-12">
+          <h2>He aha ēnā kupu?<br>
+            What are those words?</h2>
+          <ul>
+            {% for kupu_name in page.kupu %}
+              {% assign kupu = site.kupu | where:"slug", kupu_name | first %}
+              <li>
+                <h3>{{ kupu.title }}</h3>
+                {{ kupu.content | markdownify }}
+              </li>
             {% endfor %}
-
-
-            <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#{{ kupu }}" aria-expanded="true" aria-controls="collapseOne">
-                {{ kupu_name }}
-              </button>
-            </h5>
-          </div>
-
-          <div id="{{ kupu }}" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              {{ kupu_content | markdownify }}
-            </div>
-          </div>
+          </ul>
         </div>
-
-        {% endfor %}
       </div>
-
-      {% for kupu in site.kupu %}
-        <li>
-          <h2>{{ kupu.title }}</h2>
-      <p>{{ kupu.content | markdownify }}</p>
-        </li>
-      {% endfor %}
-    </div>
+    {% endif %}
   </div>
-
 </div>
