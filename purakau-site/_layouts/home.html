@@ -1,5 +1,6 @@
 ---
 layout: default
+class: home
 ---
 
 <div class="home">
@@ -9,16 +10,15 @@ layout: default
         {%- for post in site.posts -%}
         <div class="col-md-4">
           <div class="card p-3 mb-4">
-            {%- assign date_format = "%b %-d, %Y" -%}
+            <!-- {%- assign date_format = "%b %-d, %Y" -%} -->
             <h2>
               <a class="post-link" href="{{ post.url | relative_url }}">
                 {{ post.title | escape }}
               </a>
             </h2>
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            {%- if site.show_excerpts -%}
+            <!-- <span class="post-meta">{{ post.date | date: date_format }}</span> -->
               {{ post.excerpt }}
-            {%- endif -%}
+
           </div>
         </div>
         {%- endfor -%}

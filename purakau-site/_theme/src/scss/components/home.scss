@@ -1,18 +1,15 @@
-.home-hero {
-  display: block;
-  max-height: 90vh;
-  margin: 0 auto;
-}
+body.home {
+  background-color: $brand-light-green;
 
-.home {
-
-  .post-list {
-    
+  .home-hero {
+    display: block;
+    max-height: 90vh;
+    margin: 0 auto;
   }
 
-}
 
-.page--home {
-  margin-bottom: 0 !important;
-  padding-top: 3rem !important;
+  .card {
+    border: 1px solid $brand-mid-green;
+    color: $brand-green;
+  }
 }

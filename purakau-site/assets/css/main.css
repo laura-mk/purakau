@@ -11049,18 +11049,16 @@ a.text-dark:focus {
 }
 
 .card {
-  border-radius: 0.175rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 0.25rem #d7d7d7;
-          box-shadow: 0 0 0.25rem #d7d7d7;
+  background-color: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.card.c-pointer:hover {
-  -webkit-box-shadow: 0 0 0.25rem #f2f2f2;
-          box-shadow: 0 0 0.25rem #f2f2f2;
+.card h2 {
+  margin-bottom: 0;
 }
 
-.card h3 a {
+.card a {
   text-decoration: none;
 }
 
@@ -12135,21 +12133,24 @@ footer {
   max-width: 200px;
 }
 
-.home-hero {
+body.home {
+  background-color: #eef4e9;
+}
+
+body.home .home-hero {
   display: block;
   max-height: 90vh;
   margin: 0 auto;
 }
 
-.page--home {
-  margin-bottom: 0 !important;
-  padding-top: 3rem !important;
+body.home .card {
+  border: 1px solid #d2e0c7;
+  color: #1a633b;
 }
 
 .post-banner {
   background-color: #000;
   min-height: 400px;
-  text-align: center;
 }
 
 .post-banner--title {
@@ -12163,8 +12164,8 @@ footer {
 }
 
 .kupu-glossary {
-  background-color: #e2f0d7;
-  color: #1a633b;
+  background-color: #FCEAE6;
+  color: #C23819;
 }
 
 .kupu-glossary ul li h3 {

@@ -1,7 +1,6 @@
 .post-banner {
   background-color: $brand-black;
   min-height: 400px;
-  text-align: center;
 
   &--title {
     background-color: white;
@@ -15,8 +14,8 @@
 }
 
 .kupu-glossary {
-  background-color: $brand-light-green;
-  color: $brand-green;
+  background-color: $brand-light-orange;
+  color: $brand-dark-orange;
   ul  {
     li {
       h3 {

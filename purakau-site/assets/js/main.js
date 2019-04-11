@@ -116,7 +116,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 Object(__WEBPACK_IMPORTED_MODULE_0__components_global__["a" /* default */])();
 
+$('.collapse').collapse();
+
 /* eslint-enable */
+
+$(function () {
+  $('[data-toggle="popover"]').popover();
+});
 
 /***/ }),
 /* 2 */
