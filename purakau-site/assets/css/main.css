@@ -12145,9 +12145,29 @@ body.home .home-hero {
   margin: 0 auto;
 }
 
-body.home .card {
-  border: 1px solid #d2e0c7;
+body.home .link-card {
+  border: 1px solid #2A655E;
   color: #2A655E;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+body.home .link-card:hover {
+  border-color: #C23819;
+  color: #C23819;
+}
+
+body.home .link-card:hover a {
+  color: #C23819;
+}
+
+body.home .link-card--heading {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+body.home .link-card a {
+  text-decoration: none;
 }
 
 body.post .post-banner {

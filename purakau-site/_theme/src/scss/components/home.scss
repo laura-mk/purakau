@@ -8,8 +8,24 @@ body.home {
   }
 
 
-  .card {
-    border: 1px solid $brand-mid-green;
+  .link-card {
+    border: 1px solid $brand-green;
     color: $brand-green;
+    padding: 1rem;
+    text-decoration: none;
+    &:hover {
+      border-color: $brand-dark-orange;
+      color: $brand-dark-orange;
+      a {
+        color: $brand-dark-orange;
+      }
+    }
+    &--heading {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+    }
   }
 }
