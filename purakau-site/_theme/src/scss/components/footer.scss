@@ -4,6 +4,12 @@ footer {
   padding: 1rem;
 
   a {
-    color: white;
+    border-bottom: 1px solid white;
+    color: $brand-light-green;
+    text-decoration: none;
+    &:hover {
+      border: none;
+      color: white;
+    }
   }
 }

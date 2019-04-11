@@ -8,6 +8,7 @@ excerpt: The story of Ranginui and Papatūānuku and the beginning of the world 
 kupu:
     - Ranginui
     - Papatuanuku
+    - Papatuanuku
 ---
 Lorem ipsum dolor sit amet, dicat scripserit eos id. Ea ius omnis iudico signiferumque. Virtute abhorreant an cum, pro an tantas pertinax senserit. Oblique quaestio has no, ullum quaeque usu in, vero simul ea usu.
 

@@ -32,6 +32,8 @@ class: post
               <li>
                 <h3>{{ kupu.title }}</h3>
                 {{ kupu.content | markdownify }}
+                  <!-- To truncate the text:
+                  {{ kupu.content | truncate:50 | markdownify }} -->
               </li>
             {% endfor %}
           </ul>
